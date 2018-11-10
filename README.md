@@ -67,7 +67,7 @@ Nodes (accessible from head to tail):
 
 
 ~~~~
-Now lets insert a value of `50` into the index `2`. By writing `ll.insert_at(50,2);` our linked list is now updated to:
+Now lets insert a value of `50` into the index `2`. Our linked list is now updated to:
 
 ~~~~
 Doubly Linked List
