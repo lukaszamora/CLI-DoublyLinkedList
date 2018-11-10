@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.21)  10 NOV 2018 01:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.21)  10 NOV 2018 01:56
 entering extended mode
 **./singleLL.tex
 (singleLL.tex
@@ -54,19 +54,8 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 \sa@box=\box26
-runsystem(pdflatex  -shell-escape  -jobname "singleLL" "\expandafter\def\csname
- sa@internal@run\endcsname{1}\input{singleLL}")...disabled (restricted).
-
- (singleLL.aux)
-runsystem(imgconvert -density 300 singleLL.pdf  -quality 90 singleLL.png)...dis
-abled (restricted).
-
-
-
-Class standalone Warning: Conversion failed! Please ensure that shell escape
-(standalone)              is enabled (e.g. use '-shell-escape').
-
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
@@ -525,10 +514,10 @@ G,.JBIG2,.JB2,.eps]
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (singleLL.aux) ) 
 Here is how much of TeX's memory you used:
- 14230 strings out of 493333
- 309852 string characters out of 3139194
- 366008 words of memory out of 3000000
- 17503 multiletter control sequences out of 15000+200000
+ 14214 strings out of 493333
+ 309660 string characters out of 3139194
+ 365927 words of memory out of 3000000
+ 17492 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,7n,67p,447b,585s stack positions out of 5000i,500n,10000p,200000b,50000s
