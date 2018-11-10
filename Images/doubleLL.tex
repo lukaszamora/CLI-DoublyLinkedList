@@ -1,0 +1,37 @@
+\documentclass[convert]{standalone}
+
+\usepackage{tikz,xcolor}
+\usetikzlibrary{shapes,shapes.geometric,shapes.symbols}
+\usetikzlibrary{arrows, positioning, shapes.geometric, shapes.symbols}
+
+\definecolor{mycolor}{RGB}{249,221,144}
+
+\begin{document}
+	
+	\begin{tikzpicture}[
+		base/.style = {draw=red!60, fill=mycolor, minimum width=1.75cm, minimum height=0.75cm, align=center} , 
+		node/.style = {rectangle, base}
+		]
+		\node (A) [node] {head};
+		\node (B) [node,right=of A] {5};
+		\node (C) [node,right=of B] {13};
+		\node (D) [node,right=of C] {62};
+		\node (E) [node,right=of D] {tail};
+		\node (F) [right=of E] {};
+		\node (G) [left=of A] {};
+		
+		\draw[transform canvas={yshift=0.6ex},->] (A.east) -- (B.west);
+		\draw[transform canvas={yshift=-0.6ex},<-] (A.east) -- (B.west);
+		\draw[transform canvas={yshift=0.6ex},->] (B.east) -- (C.west);
+		\draw[transform canvas={yshift=-0.6ex},<-] (B.east) -- (C.west);
+		\draw[transform canvas={yshift=0.6ex},->] (C.east) -- (D.west);
+		\draw[transform canvas={yshift=-0.6ex},<-] (C.east) -- (D.west);
+		\draw[transform canvas={yshift=0.6ex},->] (D.east) -- (E.west);
+		\draw[transform canvas={yshift=-0.6ex},<-] (D.east) -- (E.west);
+		\draw[-|] (E.east) -- (F.west);
+		\draw[|-] (G.east) -- (A.west);
+	\end{tikzpicture}
+	
+	
+	
+\end{document}
