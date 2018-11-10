@@ -8,5 +8,5 @@ A linked list is a linear data structure that links elements, called nodes, toge
 
 Starting at the head node, we can traverse through each node in a single direction:
 
-![alt text](https://raw.githubusercontent.com/lukaszamora/DoublyLinkedList/master/images/singleLL.png)
+![singleLL](https://imgur.com/a/QFQmAvM)
 
