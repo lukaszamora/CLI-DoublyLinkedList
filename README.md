@@ -20,7 +20,7 @@ This is where the bulk of the project is located. All member function definition
 
 ## Demo
 
-Lets create a new doubly linked list named `ll` and insert the values `7, 11, 27` into it We'll also want to output our list after each operation. The output is then:
+Lets create a new doubly linked list named `ll` and insert the values `7, 11, 27` into it. We do this using the `insert_front()` function. We'll also want to output our list after each operation. The output is then:
 ~~~~
 Doubly Linked List
 Head: 0xe66ce8   Tail: 0xe66ce8
@@ -67,7 +67,7 @@ Nodes (accessible from head to tail):
 
 
 ~~~~
-Now lets insert a value of `50` into the index `2`. Our linked list is now updated to:
+Now lets insert a value of `50` into the index `2`. We do this by writing `insert_at(50,2);`. Our linked list is now updated to:
 
 ~~~~
 Doubly Linked List
@@ -92,3 +92,5 @@ Nodes (accessible from head to tail):
                 '---------------'---------------'---------------'
 
 ~~~~
+
+A full list of functions can be found in `DoublyLinkedList.h`.
