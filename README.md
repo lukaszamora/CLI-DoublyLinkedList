@@ -10,4 +10,3 @@ Starting at the head node, we can traverse through each node in a single directi
 
 ![singlell](https://user-images.githubusercontent.com/26682469/48298992-feba2800-e48b-11e8-9654-6b9f36ae302f.png)
 
-
