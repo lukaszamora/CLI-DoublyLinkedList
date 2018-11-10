@@ -3,16 +3,14 @@
 #include <sstream>
 using namespace std;
 
-DoublyLinkedList::DoublyLinkedList()
-{
+DoublyLinkedList::DoublyLinkedList() {
     this->head = nullptr;
     this->tail = nullptr;
 }
 
 DoublyLinkedList::DoublyLinkedList(int val) : head(new Node(val)), tail(new Node(val)) {}
 
-DoublyLinkedList::~DoublyLinkedList()
-{
+DoublyLinkedList::~DoublyLinkedList() {
     Node *n = head->next;
     while (n != head) {
         Node *next = n->next;
@@ -22,8 +20,7 @@ DoublyLinkedList::~DoublyLinkedList()
     delete head;
 }
 
-void DoublyLinkedList::insert_back(int val)
-{
+void DoublyLinkedList::insert_back(int val) {
     Node *n = new Node;
     n->data = val;
     n->next = head;
@@ -32,8 +29,7 @@ void DoublyLinkedList::insert_back(int val)
     n->prev->next = n;
 }
 
-void DoublyLinkedList::insert_front(int val)
-{
+void DoublyLinkedList::insert_front(int val) {
     Node* n = new Node(val);
     if (head == nullptr)
         tail = n;
@@ -42,8 +38,7 @@ void DoublyLinkedList::insert_front(int val)
         n->next->prev = head;
 }
 
-void DoublyLinkedList::insert_at(int val, int idx)
-{
+void DoublyLinkedList::insert_at(int val, int idx) {
     Node* temp1 = new Node();
     temp1->data = val;
     temp1->next = nullptr;
@@ -60,8 +55,7 @@ void DoublyLinkedList::insert_at(int val, int idx)
     temp2->next = temp1;
 }
 
-Node& DoublyLinkedList::find(int val)
-{
+Node& DoublyLinkedList::find(int val) {
     // Start from the head
     Node* current = head;
 
@@ -88,8 +82,7 @@ Node& DoublyLinkedList::find(int val)
     std::cout << "Found" << std::endl;
 }
 
-void DoublyLinkedList::delete_at(int idx)
-{
+void DoublyLinkedList::delete_at(int idx) {
     Node *n = head->next;
     while (n != head) {
         Node *next = n->next;
@@ -102,23 +95,19 @@ void DoublyLinkedList::delete_at(int idx)
     }
 }
 
-Node& DoublyLinkedList::get_head()
-{
+Node& DoublyLinkedList::get_head() {
     return *head;
 }
 
-Node& DoublyLinkedList::get_tail()
-{
+Node& DoublyLinkedList::get_tail() {
     return *tail;
 }
 
-Node const& DoublyLinkedList::get_head() const
-{
+Node const& DoublyLinkedList::get_head() const {
     return *head;
 }
 
-Node const& DoublyLinkedList::get_tail() const
-{
+Node const& DoublyLinkedList::get_tail() const {
     return *tail;
 }
 
@@ -141,8 +130,7 @@ ostream& operator<<(ostream &os, DoublyLinkedList const& ll) {
     return os;
 }
 
-string center (const string &str, const int col_width)
-{
+string center (const string &str, const int col_width) {
     // quick and easy (but error-prone) implementation
     int padl = (col_width - str.length()) / 2;
     int padr = (col_width - str.length()) - padl;

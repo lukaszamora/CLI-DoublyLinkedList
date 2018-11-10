@@ -16,9 +16,7 @@ try {
 	cout << ll << endl << endl;
 	ll.insert_front(27);
 	cout << ll << endl << endl;
-	ll.insert_at(50,2);
-	cout << ll << endl << endl;
-	ll.insert_back(1);
+	ll.insert_at(50, 2);
 	cout << ll << endl << endl;
 
 	return 0;
